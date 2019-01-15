@@ -7,3 +7,4 @@ Requires curl to be enabled inorder to post via webhook.
 ## Preview
 
 ## Demo
+[Discord Server](https://discord.gg/wCy5Eht)
