@@ -38,7 +38,7 @@ require_once ('config.php');
             <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="form rating" value="Hates it" id="radio-button2" checked="" class="custom-control-input" required><label for="radio-button2" class="custom-control-label" style="color: '.$font_color.' !important;">Hate This Form</label></div>
         </div>
         <div class="form-group">
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" name="checkbox" value="Yes" id="checkbox-button"  checked="" class="custom-control-input" required><label for="checkbox-button" class="custom-control-label" style="color: '.$font_color.' !important;">I&apos;d like a free checkbox.</label></div>
+            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" name="checkbox" value="Yes" id="checkbox-button"  checked="" class="custom-control-input"><label for="checkbox-button" class="custom-control-label" style="color: '.$font_color.' !important;">I&apos;d like a free checkbox.</label></div>
         </div>
         <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message" required></textarea></div>
         <div class="form-group"><button class="btn '.$buttom_type.'" type="submit">send</button></div>
