@@ -11,6 +11,7 @@ Requires curl to be enabled inorder to post via webhook.
 ### Setup with Custom Form.
 - Upload config.php & discord-post.php into your webserver.
 - Enter your details into config.php.
+- I'd delete all the form formatting for the template out of config.php.
 - Have your form posting to discord-post.php.
 
 ```
