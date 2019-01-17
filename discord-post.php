@@ -22,10 +22,10 @@ function SendForm() {
 }
 
 if (SendForm() == null) {
-    header('Location: index.php?r=success');
+    header("Location: {$_SERVER['HTTP_REFERER']}?r=success");
     exit();
 } else {
-    header('Location: index.php?r=error');
+    header("Location: {$_SERVER['HTTP_REFERER']}?r=success");
     exit();
 }
 ?>
