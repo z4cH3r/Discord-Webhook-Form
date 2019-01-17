@@ -27,7 +27,7 @@ Custom Example
 - value="" is entered below the title.
 
 ## Notes
-- Form returns back with ever index.php?r=success or index.php?r=error.
+- Form returns back with ever ?r=success or ?r=error.
 - No backend form verification, users could add new form inputs. That shouldn't really matter because they will just be posted with the message and nothing malicious could be done.
 
 ## Preview
