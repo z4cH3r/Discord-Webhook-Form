@@ -25,7 +25,7 @@ if (SendForm() == null) {
     header("Location: {$_SERVER['HTTP_REFERER']}?r=success");
     exit();
 } else {
-    header("Location: {$_SERVER['HTTP_REFERER']}?r=success");
+    header("Location: {$_SERVER['HTTP_REFERER']}?r=error");
     exit();
 }
 ?>
