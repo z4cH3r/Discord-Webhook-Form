@@ -10,7 +10,7 @@ function SendForm() {
     }
     $desc = '';
     foreach ($_POST as $name => $input) {
-        $desc .= '**'.htmlspecialchars(ucwords($name)).':**'."\n".''.htmlspecialchars($input).''."\n\n".'';
+        $desc .= '**'.htmlspecialchars(ucwords(str_replace("_", " ", $name)).':**'."\n".''.htmlspecialchars($input).''."\n\n".'';
     }
     $embed = array("embeds" => array(0 => array("title" => $embed_title, "description" => $desc, "color" => $embed_color),), "username" => $username);
     $content = array_merge($msg, $embed);
