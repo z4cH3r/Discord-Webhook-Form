@@ -10,7 +10,13 @@ function SendForm() {
     }
     $desc = '';
     foreach ($_POST as $name => $input) {
-        $desc .= '**'.htmlspecialchars(ucwords(str_replace("_", " ", $name)).':**'."\n".''.htmlspecialchars($input).''."\n\n".'';
+        if ($input == null) {
+            $result = "Blank";
+        } else {
+            $result = $input;
+        }
+        $name_formatted = str_replace('_', ' ', $name);
+        $desc .= '**'.htmlspecialchars(ucwords($name_formatted)).':**'."\n".''.htmlspecialchars($result).''."\n\n".'';
     }
     $embed = array("embeds" => array(0 => array("title" => $embed_title, "description" => $desc, "color" => $embed_color),), "username" => $username);
     $content = array_merge($msg, $embed);
